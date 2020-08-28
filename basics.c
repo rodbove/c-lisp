@@ -20,6 +20,15 @@ The switch statement executes an operation depending on the value of the express
 
 -What is the "typedef" specifier and what does it do?
 The "typedef" specifier creates an alias for a type that will be declared mor times on your code. This is higly applicable on comples type definitions to shorten and ease the syntax. For example, by declaring "typedef unsigned long long UINT64i" UINT64 is now an alias for the type "unsigned long long" and can be used to declare this type further on your code.
+
+-What does the preprocessor command #ifndef do?
+This command checks a condition on indentifier if not defined as a macro name. Equivalent to #if !defined
+
+-What does the preprocessor command #define do?
+This preprocessor command defines a function or variable as a macro name, essentially a "constant" on your code
+
+-What is the equivalent definer fow _WIN32 on Linux and Mac?
+__linux__ and __APPLE__
 */
 #include <stdio.h>
 
