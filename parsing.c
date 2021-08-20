@@ -20,7 +20,6 @@ void add_history(char* unused) {}
 
 #else
 #include <editline/readline.h>
-#include <editline/history.h>
 #endif
 
 int main(int argc, char** argv) {
@@ -43,7 +42,7 @@ int main(int argc, char** argv) {
     puts("Press Ctrl+c to Exit dglisp console\n");
 
     while (1) {
-        char* input = readline("dglisp> ");
+        char* input = readline("clisp> ");
 	add_history(input);
 
 	mpc_result_t r;
